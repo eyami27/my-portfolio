@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins" sans-serif;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: initial;
+}
+body {
+  background: black;
+  flex-wrap: wrap;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 12%;
+  background: black;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.logo {
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.logo:hover {
+  color: yellow;
+  text-shadow: 0 0 25px yellow, 0 0 50px yellow;
+  transform: scale(1.1);
+}
+span {
+  color: yellow;
+  font-size: 40px;
+}
+.navbar a {
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+  margin: 0 20px;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+  list-style: none;
+}
+.navbar a:hover {
+  padding: 10px;
+  margin: 10px;
+  background-color: yellow;
+  color: black;
+  border: 2px solid white;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  align-items: center;
+  padding: 30px 12% 0;
+  gap: 7em;
+  display: flex;
+  color: white;
+}
+.home-content {
+  max-width: 800px;
+}
+.home-content h3 {
+  font-size: 42px;
+}
+.home-content h1 {
+  font-size: 62px;
+  line-height: 1.2;
+  text-align: left;
+}
+.home-content p {
+  font-size: 22px;
+  margin: 25px 0 30px;
+  width: 80%;
+}
+.btn-box {
+  width: 345px;
+  display: flex;
+  gap: 2em;
+}
+.btn-1 {
+  padding: 15px 28px;
+  background-color: yellow;
+  color: black;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.btn-1:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+}
+.img-box img {
+  border-radius: 30%;
+  width: 450px;
+  border: 1px solid white;
+  box-shadow: 0 0 25px yellow, 0 0 35px yellow;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12% 8%;
+  gap: 7em;
+  background: black;
+  color: white;
+}
+.about-img img {
+  position: relative;
+  width: 550px;
+  box-shadow: 0 0 25px yellow, 0 0 50px yellow;
+  border-radius: 50%;
+}
+.about-content h2 {
+  text-align: left;
+  color: white;
+  font-size: 35px;
+}
+.about-content h3 {
+  font-size: 55px;
+  color: white;
+}
+.about-content p {
+  color: white;
+  font-size: 22px;
+  margin: 2em 0 3em;
+}
+.contact-form h2 {
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  font-size: 36px;
+  color: white;
+}
+.contact-form form {
+  max-width: 50em;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3em;
+}
+.aboutt .me {
+  display: flex;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  justify-content: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 20px;
+  line-height: 2;
+  list-style: none;
+}
+.contact-form {
+  background: black;
+}
+.contact-form form .input-box {
+  display: flex;
+  justify-content: flex;
+  flex-wrap: wrap;
+}
+.contact-form form .input-box input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 1.5em;
+  font-size: 18px;
+  color: white;
+  border-radius: 8px;
+  margin: 1rem 0;
+  resize: none;
+  background: black;
+}
+.project {
+  margin: 50px;
+  padding: 50px;
+  display: flex;
+  background-color: black;
+}
+.skill {
+  margin: 50px;
+  padding: 50px;
+  display: flex;
+  background-color: black;
+}
+.skill .cards {
+  color: white;
+  width: 600px;
+  padding: 70px;
+  margin: 80px;
+  border-bottom: 2px solid yellow;
+  box-shadow: 3px 3px 5px 5px yellow;
+  border-radius: 5px 10px;
+  line-height: 1.9;
+}
+.exbd {
+  width: 200px;
+  height: 700px;
+  margin: 50px;
+  padding: 50px;
+  display: flex;
+  background-color: black;
+}
+.exbd .cards {
+  color: white;
+  width: 600px;
+  padding: 50px;
+  margin: 10px;
+  border-bottom: 2px solid yellow;
+  box-shadow: 3px 3px 5px 5px yellow;
+  border-radius: 5px 10px;
+  line-height: 1.9;
+}
+.exbd .cards p {
+  font-size: 25px;
+  text-align: left;
+  width: 500px;
+}
+.exbd .cards h2 {
+  text-align: center;
+  color: yellow;
+  font-size: 30px;
+}
+.computer .cards {
+  color: white;
+  width: 600px;
+  padding: 50px;
+  display: inline-block;
+  align-items: center;
+  margin: 50px auto;
+  border-bottom: 2px solid yellow;
+  box-shadow: 3px 3px 5px 5px yellow;
+  border-radius: 5px 10px;
+  line-height: 1.9;
+}
+.project{
+  height: 700px;
+}
+.project .card-1 {
+  color: white;
+  width: 500px;
+  padding: 100px;
+  margin: 80px;
+  border-bottom: 2px solid yellow;
+  box-shadow: 3px 3px 5px 5px yellow;
+  border-radius: 5px 10px;
+}
+.project .card {
+  background: yellow;
+  width: 500px;
+  padding: 100px;
+  margin: 80px;
+  border-bottom: 2px solid yellow;
+  box-shadow: 3px 3px 5px 5px yellow;
+  border-radius: 5px 10px;
+}
+.project .card:hover {
+  background: url(../image/booking.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  transition: 0.9s ease;
+}
+.project .card-1:hover {
+  background: url(../image/shoes\ book.jpg);
+  background-position: center;
+  background-size: cover;
+  color: black;
+  transition: 0.9s ease;
+}
+.project p {
+  font-size: 25px;
+  text-align: left;
+}
+.skill p {
+  font-size: 25px;
+  text-align: left;
+}
+.skill .cards h2 {
+  text-align: center;
+  color: yellow;
+  font-size: 30px;
+}
+.skill h2 {
+  text-align: left;
+  font-size: 35px;
+  align-items: left;
+}
+.project h2 {
+  text-align: left;
+  font-size: 35px;
+  align-items: left;
+}
+h1 {
+  color: white;
+  text-align: center;
+  align-items: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  background: black;
+}
+progress {
+  font-size: 50px;
+  width: 50;
+  padding: 20px;
+  background-color: black;
+}
+.languge {
+  color: white;
+  font-size: 28px;
+}
+.list a {
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+  margin: 20px;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  width: 20%;
+  padding: 10px;
+}
+.list a:hover {
+  padding: 10px;
+  margin: 10px;
+  background-color: yellow;
+  color: black;
+  border: 2px solid white;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+.headd {
+  color: white;
+  font-size: 38px;
+  text-align: center;
+}
+.skill .languge .card {
+  color: white;
+  width: 600px;
+
+  padding: 100px;
+  margin: 80px;
+  border-bottom: 2px solid yellow;
+  box-shadow: 3px 3px 5px 5px yellow;
+  border-radius: 5px 10px;
+  line-height: 1.9;
+}
+.skill .languge .card:hover {
+  background: yellow;
+  color: black;
+  transition: 0.3s ease;
+}
+.fotter {
+  position: static;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  font-size: 22px;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
